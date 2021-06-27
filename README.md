@@ -12,6 +12,12 @@ To install the Streamlit library
 pip install streamlit
 ```
 
+To run a web app
+
+```
+streamlit run myapp.py
+```
+
 ## :one: Simple Stock Price App
 
 A simple web app that shows a company's stock.
@@ -21,3 +27,12 @@ Towards Data Science article on [How to Get Stock Data Using Python](https://tow
 ```
 pip install yfinance
 ```
+
+Lesson learned: Using Streamlit to build basic web app
+
+
+## :two: Simple Bioinformatics DNA Count
+
+A DNA nucleotide count web app which counts the nucleotide composition (A, T, G, C) of a query DNA
+
+Lesson learned: Taking input and showing output in different formats (dictionary, text, dataframe, plot)
