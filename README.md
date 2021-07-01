@@ -36,8 +36,10 @@ A DNA nucleotide count web app which counts the nucleotide composition (A, T, G,
 
 Lesson learned: Taking input and showing output in different formats (dictionary, text, dataframe, plot)
 
-## :three: EDA Basketball Data
+## :three: EDA Basketball
 
 Web scraping from the [Basketball Reference](https://www.basketball-reference.com) website. Data filter. Simple exploratory data analysis by creating simple heat map
 
 Lesson learned: Using Streamlit's select widget and multiselect widget, web scrapping with pandas, and filtering data with conditions in pandas (data wrangling).
+
+## :four: EDA Football
