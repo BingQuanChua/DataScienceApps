@@ -35,6 +35,7 @@ pip install yfinance
 
 A DNA nucleotide count web app which counts the nucleotide composition (A, T, G, C) of a query DNA
 
+* Displaying images
 * Taking input and showing output in different formats (dictionary, text, dataframe, plot)
 
 ## :three: EDA Basketball and Football
@@ -42,7 +43,7 @@ A DNA nucleotide count web app which counts the nucleotide composition (A, T, G,
 Web scraping from [Basketball Reference](https://www.basketball-reference.com) and [Football Reference](https://www.pro-football-reference.com/). Performs a simple exploratory data analysis by creating a heatmap.
 
 * Select widget and multiselect widget in `streamlit`
-* Web scrapping with `pandas`
+* Web scraping with `pandas`
 * Filtering data with conditions in `pandas` (data wrangling)
 * Downloading csv files in Streamlit
 
@@ -50,9 +51,18 @@ Web scraping from [Basketball Reference](https://www.basketball-reference.com) a
 
 The [S&P 500](https://en.wikipedia.org/wiki/S%26P_500) (the Standard and Poor's 500) is a market-​capitalization-weighted measurement stock market index of the 500 largest companies listed on stock exchanges in the United States. It is one of the most commonly followed equity indices by investors.
 
-This web app scraps all company data from the latest [list of S&P 500 companies](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) on Wikipedia, fetch their respective stock price data and plot the stock closing price. 
+A web app that scraps all latest data from the [list of S&P 500 companies](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies) on Wikipedia, fetch their respective stock price data and plot the stock closing price. 
 
-* Web scrapping with `pandas`
+* Web scraping with `pandas`
 * Fetching stock price with `yfinance`
 * Filtering data with conditions in `pandas` (data wrangling)
 * Slider in `streamlit`
+
+## :five: EDA Cryptocurrency
+
+A web app that scraps the latest cryptocurrency data from [CoinMarketCap](https://coinmarketcap.com). Allow users to select different cryptocurrencies and make comparison. 
+
+Medium article on [Web Scraping Crypto Prices with Python](https://bryanf.medium.com/web-scraping-crypto-prices-with-python-41072ea5b5bf)
+
+* Web scraping with `BeautifulSoup`
+* Page layout in `streamlit`
