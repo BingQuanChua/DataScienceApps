@@ -11,7 +11,7 @@ def main():
     # Main page
     st.title('Sports Exploratory Data Analysis')
     st.markdown("""
-    This app performs simple webscraping and EDA! Select a sport on the left to get started.
+    This app performs simple web scraping and EDA! Select a sport on the left to get started.
     """)
 
     # Sidebar - Sports selection
