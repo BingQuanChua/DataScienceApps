@@ -12,7 +12,7 @@ def main():
     """)
 
     image = Image.open('iris_type.jpeg')
-    st.image(image, width=700)
+    st.image(image)
 
     st.write("""
     Input your data from the sidebar on the left.

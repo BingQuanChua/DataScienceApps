@@ -39,6 +39,13 @@ A DNA nucleotide count web app which counts the nucleotide composition (A, T, G,
 * Displaying images
 * Taking input and showing output in different formats (dictionary, text, dataframe, plot)
 
+<details> 
+    <summary>screenshot</summary>
+    <img src="images/02-1.png">
+    <img src="images/02-2.png">
+    <img src="images/02-3.png">
+</details>
+
 ## :three: Sports Exploratory Data Analysis App
 
 Web scraping from [Basketball Reference](https://www.basketball-reference.com) and [Football Reference](https://www.pro-football-reference.com/). Performs a simple exploratory data analysis by creating a heatmap. Combined EDA Basketball and EDA Football together.
@@ -47,6 +54,13 @@ Web scraping from [Basketball Reference](https://www.basketball-reference.com) a
 * Web scraping with `pandas`
 * Filtering data with conditions in `pandas` (data wrangling)
 * Downloading csv files in Streamlit
+
+<details> 
+    <summary>screenshot</summary>
+    <img src="images/03-1.png">
+    <img src="images/03-2.png">
+    <img src="images/03-3.png">
+</details>
 
 ## :four: S&P 500 Stock Price App 
 
@@ -59,6 +73,11 @@ A web app that scraps all latest data from the [list of S&P 500 companies](https
 * Filtering data with conditions in `pandas` (data wrangling)
 * Slider in `streamlit`
 
+<details> 
+    <summary>screenshot</summary>
+    <img src="images/04-1.png">
+</details>
+
 ## :five: Cryptocurrency Price App
 
 A web app that scraps the latest cryptocurrency data from [CoinMarketCap](https://coinmarketcap.com). Allow users to select different cryptocurrencies and make comparison. 
@@ -67,6 +86,12 @@ Medium article on [Web Scraping Crypto Prices with Python](https://bryanf.medium
 
 * Web scraping with `BeautifulSoup`
 * Page layout in `streamlit`
+
+<details> 
+    <summary>screenshot</summary>
+    <img src="images/05-1.png">
+    <img src="images/05-2.png">
+</details>
 
 ## :six: Simple Iris Flower Prediction App
 
@@ -79,6 +104,7 @@ The model applies the [Iris Plants Dataset](https://scikit-learn.org/stable/data
 <details> 
     <summary>screenshot</summary>
     <img src="images/06-1.png">
+    <img src="images/06-2.png">
 </details>
 
 ## :seven: Simple Palmer Penguin Prediction App

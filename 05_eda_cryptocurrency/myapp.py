@@ -19,7 +19,7 @@ def main():
     #####################################################################
     # Title
     image = Image.open('crypto.jpg')
-    st.image(image, width=800)
+    st.image(image)
 
     st.title('Crypto Price App')
     st.markdown("""
