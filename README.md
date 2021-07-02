@@ -24,10 +24,6 @@ A simple web app that shows a company's stock. Retrieve stock stock data directl
 
 Towards Data Science article on [How to Get Stock Data Using Python](https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75) (using `yfinance`)
 
-```
-pip install yfinance
-```
-
 * Using `streamlit` to build basic web app
 * Using `yfinance` to get stock price data
 
@@ -66,3 +62,11 @@ Medium article on [Web Scraping Crypto Prices with Python](https://bryanf.medium
 
 * Web scraping with `BeautifulSoup`
 * Page layout in `streamlit`
+
+## :six: Simple Iris Flower Prediction App
+
+A web app that predicts the iris flower type from the user input. The prediction will be made using Random Forest Classification. Accept input parameters comprising of sepal length, sepal width, petal length, petal width. 
+
+The model applies the [Iris Plants Dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#iris-plants-dataset) provided in the scikit-learn library
+
+* Uses the RandomForestClassifier model from `sklearn`
