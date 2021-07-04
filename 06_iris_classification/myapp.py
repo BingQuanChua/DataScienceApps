@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 from sklearn import datasets
-from sklearn.ensemble import RandomForestClassifier
+import pickle
 
 
 def main():
@@ -26,17 +26,17 @@ def main():
     st.write(df)
 
     iris = datasets.load_iris()
-    prediction, prediction_proba = predict(df, iris)
+    prediction, prediction_proba = predict(df)
     
     st.subheader('Class labels and their corresponding index number')
     st.write(iris.target_names)
 
-    st.subheader('Prediction Probability')
-    st.write(prediction_proba)
-
-    st.subheader('Final Prediction')
+    st.subheader('Prediction')
     st.write(iris.target_names[prediction])
     # st.write(prediction) # shows the index
+
+    st.subheader('Prediction Probability')
+    st.write(prediction_proba)
 
 
 def user_input_features():
@@ -52,14 +52,9 @@ def user_input_features():
     return features
 
 
-def predict(df, iris):
-    # loading the toy dataset
-    X = iris.data
-    Y = iris.target
+def predict(df):
 
-    clf = RandomForestClassifier()
-    clf.fit(X, Y)
-
+    clf = pickle.load(open('iris_clf.pkl', 'rb'))
     prediction = clf.predict(df)
     prediction_proba = clf.predict_proba(df)
 

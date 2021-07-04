@@ -1,8 +1,8 @@
-# Some Data Science Apps
+# Some Data Science Web Apps
 
 Learning how to build data science apps from freeCodeCamp.org
 
-Following this tutorial: [Build 12 Data Science Apps with Python and Streamlit - Full Course](https://www.youtube.com/watch?v=JwSS70SZdyM&list=PLRpb1EfB9cjuOFw_ZVmeqlCgdhYjdbBMO&index=10&ab_channel=freeCodeCamp.org) (actually there are only 10)
+Tutorial by Data Professor: [Build 12 Data Science Apps with Python and Streamlit - Full Course](https://www.youtube.com/watch?v=JwSS70SZdyM&list=PLRpb1EfB9cjuOFw_ZVmeqlCgdhYjdbBMO&index=10&ab_channel=freeCodeCamp.org) (actually there are only 10)
 
 The tutorial above covers how to build interactive and data-driven Python web apps using the Streamlit library. This repo contains 9 web apps built from the tutorial with slight modifications.
 
@@ -40,7 +40,7 @@ A DNA nucleotide count web app which counts the nucleotide composition (A, T, G,
 * Taking input and showing output in different formats (dictionary, text, dataframe, plot)
 
 <details> 
-    <summary>screenshot</summary>
+    <summary>screenshots</summary>
     <img src="images/02-1.png">
     <img src="images/02-2.png">
     <img src="images/02-3.png">
@@ -56,7 +56,7 @@ Web scraping from [Basketball Reference](https://www.basketball-reference.com) a
 * Downloading csv files in Streamlit
 
 <details> 
-    <summary>screenshot</summary>
+    <summary>screenshots</summary>
     <img src="images/03-1.png">
     <img src="images/03-2.png">
     <img src="images/03-3.png">
@@ -88,23 +88,40 @@ Medium article on [Web Scraping Crypto Prices with Python](https://bryanf.medium
 * Page layout in `streamlit`
 
 <details> 
-    <summary>screenshot</summary>
+    <summary>screenshots</summary>
     <img src="images/05-1.png">
     <img src="images/05-2.png">
 </details>
 
 ## :six: Simple Iris Flower Prediction App
 
-A web app that predicts the iris flower type from the user input. The prediction will be made using Random Forest Classification. Accept user input parameters (sepal length, sepal width, petal length, petal width) and make a prediction according to a model built from the dataset.
+A web app that predicts the iris flower type from the user input. The prediction is made by using a Random Forest Classification. Accepts user input parameters (sepal length, sepal width, petal length, petal width) and make a prediction according to a model built from the dataset.
 
 The model applies the [Iris Plants Dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#iris-plants-dataset) provided in the scikit-learn library
 
-* Uses the RandomForestClassifier model from `sklearn`
+* Built a classifier using the RandomForestClassifier model from `sklearn`
 
 <details> 
-    <summary>screenshot</summary>
+    <summary>screenshots</summary>
     <img src="images/06-1.png">
     <img src="images/06-2.png">
 </details>
 
 ## :seven: Simple Palmer Penguin Prediction App
+
+Predicts the palmer penguin species (Chinstrap, Gentoo, and Adélie penguins) by using a classification model. Accepts user input in the form of CSV file upload or direct input.
+
+The original [Palmer Penguins Dataset](https://allisonhorst.github.io/palmerpenguins/articles/intro.html) is provided by Allison Horst. The model in this web app uses the [cleaned dataset](https://github.com/dataprofessor/data/blob/master/penguins_cleaned.csv) provided by Data Professor.
+
+* Built a classifier using the RandomForestClassifier model from `sklearn`
+* File uploader in `streamlit`
+
+<details> 
+    <summary>screenshots</summary>
+    <img src="images/07-1.png">
+    <img src="images/07-2.png">
+    CSV file upload
+    <img src="images/07-3.png">
+    Slider input
+    <img src="images/07-4.png">
+</details>
