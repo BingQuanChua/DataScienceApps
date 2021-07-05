@@ -14,6 +14,7 @@ def main():
 
     image = Image.open('palmerpenguins.png')
     st.image(image)
+    st.write("""Artwork by @allison_horst.""")
 
     st.sidebar.header('User Input Features')
 

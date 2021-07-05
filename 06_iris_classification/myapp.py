@@ -6,9 +6,12 @@ import pickle
 
 
 def main():
+
+    st.set_page_config(layout="wide")
+    
     st.write("""
     # Simple Iris Flower Prediction App
-    This app predicts the **Iris flower** type!
+    This app predicts the **Iris flower** type! Image by [Hulkido](https://github.com/Hulkido/Fisheriris_MATLAB)
     """)
 
     image = Image.open('iris_type.jpeg')

@@ -20,7 +20,10 @@ def main():
     # Title
     image = Image.open('crypto.jpg')
     st.image(image)
-
+    
+    st.markdown("""
+    Photo by [André François McKenzie](https://unsplash.com/@silverhousehd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/cryptocurrency?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText")
+    """)
     st.title('Crypto Price App')
     st.markdown("""
     This app retrieves cryptocurrency prices for the top 100 cryptocurrency from the **CoinMarketCap**!

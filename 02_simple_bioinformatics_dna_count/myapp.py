@@ -5,9 +5,12 @@ from PIL import Image
 
 
 image = Image.open('dna.jpg')
-st.image(image, use_column_width=True)
+st.image(image)
 
 st.write('''
+Photo by [PublicDomainPictures](https://pixabay.com/users/publicdomainpictures-14/) on [Pixabay](https://pixabay.com)
+  
+
 # DNA Nucleotide Count Web App
 
 This app counts the nucleotide composition of query DNA!
