@@ -1,10 +1,10 @@
-# Some Data Science Web Apps
+# Data Science Web Apps
 
 Learning how to build data science apps from freeCodeCamp.org
 
 Tutorial by Data Professor: [Build 12 Data Science Apps with Python and Streamlit - Full Course](https://www.youtube.com/watch?v=JwSS70SZdyM&list=PLRpb1EfB9cjuOFw_ZVmeqlCgdhYjdbBMO&index=10&ab_channel=freeCodeCamp.org) (actually there are only 10)
 
-The tutorial above covers how to build interactive and data-driven Python web apps using the Streamlit library. This repo contains 9 web apps built from the tutorial with slight modifications.
+The tutorial above covers how to build interactive and data-driven Python web apps using the Streamlit library. This repo contains 9 web apps built from the tutorial with slight modifications and enhancement.
 
 To install the Streamlit library
 
@@ -20,7 +20,7 @@ streamlit run myapp.py
 
 ## :one: Simple Stock Price App
 
-A simple web app that shows a company's stock. Retrieve stock stock data directly from Yahoo Finance.
+A simple web app that shows a stock price of multiple multinational companies. Retrieve stock stock data directly from Yahoo Finance.
 
 Towards Data Science article on [How to Get Stock Data Using Python](https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75) (using `yfinance`)
 
@@ -97,7 +97,7 @@ Medium article on [Web Scraping Crypto Prices with Python](https://bryanf.medium
 
 A web app that predicts the iris flower type from the user input. The prediction is made by using a Random Forest Classification. Accepts user input parameters (sepal length, sepal width, petal length, petal width) and make a prediction according to a model built from the dataset.
 
-The model applies the [Iris Plants Dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#iris-plants-dataset) provided in the scikit-learn library
+The model applies the [Iris Plants Dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#iris-plants-dataset) provided in the scikit-learn library.
 
 * Built a classifier using the RandomForestClassifier model from `sklearn`
 
@@ -124,4 +124,35 @@ The original [Palmer Penguins Dataset](https://allisonhorst.github.io/palmerpeng
     <img src="images/07-3.png">
     Slider input
     <img src="images/07-4.png">
+</details>
+
+## :eight: Boston Housing Price Prediction App
+
+Predicts the median value of Boston House Price from the given input parameters which consists of:
+
+* **crim**: per capita crime rate by town.
+* **zn**: proportion of residential land zoned for lots over 25,000 sq.ft.
+* **indus**: proportion of non-retail business acres per town.
+* **chas**: Charles River dummy variable (= 1 if tract bounds river; 0 otherwise).
+* **nox**: nitrogen oxides concentration (parts per 10 million).
+* **rm**: average number of rooms per dwelling.
+* **age**: proportion of owner-occupied units built prior to 1940.
+* **dis**: weighted mean of distances to five Boston employment centres.
+* **rad**: index of accessibility to radial highways.
+* **tax**: full-value property-tax rate per \$10,000.
+* **ptratio**: pupil-teacher ratio by town.
+* **b**: 1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town.
+* **lstat**: lower status of the population (percent).
+
+The regression model uses Random Forest Regressor, trained by the [Boston House Prices Dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#boston-house-prices-dataset) provided in the scikit-learn library. The model's prediction is explained by [SHAP values](https://github.com/slundberg/shap).
+
+* Built a regressor using the RandomForestRegressor model from `sklearn`
+* Using the `shap` to explain the outcome of the prediction
+
+<details> 
+    <summary>screenshots</summary>
+    <img src="images/08-1.png">
+    <img src="images/08-2.png">
+    <img src="images/08-3.png">
+    <img src="images/08-4.png">
 </details>
