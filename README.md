@@ -19,14 +19,23 @@ streamlit run myapp.py
 ```
 
 List of data science web apps in this repo:
+
 [📈 Simple Stock Price App](#one-simple-stock-price-app)
+
 [🧬 Simple Bioinformatics DNA Count](#two-simple-bioinformatics-dna-count)
+
 [🏃‍♂️ Simple Exploratory Data Analysis App](#three-sports-exploratory-data-analysis-app)
+
 [🏭 S&P 500 Stock Price App](#four-sp-500-stock-price-app)
+
 [💹 Cryptocurrency Price App](#five-cryptocurrency-price-app)
+
 [🌷 Simple Iris Flower Prediction App](#six-simple-iris-flower-prediction-app)
+
 [🐧 Simple Palmer Penguin Prediction App](#seven-simple-palmer-penguin-prediction-app)
+
 [🏡 Boston Housing Price Prediction App](#eight-boston-housing-price-prediction-app)
+
 [🧪 Molecular Solubility Prediction App](#nine-molecular-solubility-prediction-app)
 
 ## :one: Simple Stock Price App
