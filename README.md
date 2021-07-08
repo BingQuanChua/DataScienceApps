@@ -4,7 +4,7 @@ Learning how to build data science apps from freeCodeCamp.org
 
 Tutorial by Data Professor: [Build 12 Data Science Apps with Python and Streamlit - Full Course](https://www.youtube.com/watch?v=JwSS70SZdyM&list=PLRpb1EfB9cjuOFw_ZVmeqlCgdhYjdbBMO&index=10&ab_channel=freeCodeCamp.org) (actually there are only 10)
 
-The tutorial above covers how to build interactive and data-driven Python web apps using the Streamlit library. This repo contains 9 web apps built from the tutorial with slight modifications and enhancement.
+The tutorial above covers how to build interactive and data-driven Python web apps using the [Streamlit](https://streamlit.io) library. This repo contains 9 web apps built from the tutorial with slight modifications and enhancement.
 
 To install the Streamlit library
 
@@ -20,11 +20,11 @@ streamlit run myapp.py
 
 ## :one: Simple Stock Price App
 
-A simple web app that shows a stock price of multiple multinational companies. Retrieve stock stock data directly from Yahoo Finance.
+A simple web app that shows the stock price of multiple multinational companies. Retrieve stock data directly from Yahoo Finance.
 
 Towards Data Science article on [How to Get Stock Data Using Python](https://towardsdatascience.com/how-to-get-stock-data-using-python-c0de1df17e75) (using `yfinance`)
 
-* Using `streamlit` to build basic web app
+* Using `streamlit` to build a basic web app
 * Using `yfinance` to get stock price data
 
 <details> 
@@ -34,7 +34,7 @@ Towards Data Science article on [How to Get Stock Data Using Python](https://tow
 
 ## :two: Simple Bioinformatics DNA Count
 
-A DNA nucleotide count web app which counts the nucleotide composition (A, T, G, C) of a query DNA
+A DNA nucleotide count web app that counts the nucleotide composition (A, T, G, C) of a query DNA
 
 * Displaying images
 * Taking input and showing output in different formats (dictionary, text, dataframe, plot)
@@ -53,7 +53,7 @@ Web scraping from [Basketball Reference](https://www.basketball-reference.com) a
 * Select widget and multiselect widget in `streamlit`
 * Web scraping with `pandas`
 * Filtering data with conditions in `pandas` (data wrangling)
-* Downloading csv files in Streamlit
+* Downloading CSV files in `streamlit`
 
 <details> 
     <summary>screenshots</summary>
@@ -80,7 +80,7 @@ A web app that scraps all latest data from the [list of S&P 500 companies](https
 
 ## :five: Cryptocurrency Price App
 
-A web app that scraps the latest cryptocurrency data from [CoinMarketCap](https://coinmarketcap.com). Allow users to select different cryptocurrencies and make comparison. 
+A web app that scraps the latest cryptocurrency data from [CoinMarketCap](https://coinmarketcap.com). Allow users to select different cryptocurrencies and make comparisons. 
 
 Medium article on [Web Scraping Crypto Prices with Python](https://bryanf.medium.com/web-scraping-crypto-prices-with-python-41072ea5b5bf)
 
@@ -95,7 +95,7 @@ Medium article on [Web Scraping Crypto Prices with Python](https://bryanf.medium
 
 ## :six: Simple Iris Flower Prediction App
 
-A web app that predicts the iris flower type from the user input. The prediction is made by using a Random Forest Classification. Accepts user input parameters (sepal length, sepal width, petal length, petal width) and make a prediction according to a model built from the dataset.
+A web app that predicts the iris flower type from the user input. The prediction is made by using a Random Forest Classification. Accepts user input parameters (sepal length, sepal width, petal length, petal width) and predict using a model built from the dataset.
 
 The model applies the [Iris Plants Dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#iris-plants-dataset) provided in the scikit-learn library.
 
