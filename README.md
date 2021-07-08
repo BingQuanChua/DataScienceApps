@@ -147,7 +147,7 @@ Predicts the median value of Boston House Price from the given input parameters 
 The regression model uses Random Forest Regressor, trained by the [Boston House Prices Dataset](https://scikit-learn.org/stable/datasets/toy_dataset.html#boston-house-prices-dataset) provided in the scikit-learn library. The model's prediction is explained by [SHAP values](https://github.com/slundberg/shap).
 
 * Built a regressor using the RandomForestRegressor model from `sklearn`
-* Using the `shap` to explain the outcome of the prediction
+* Using `shap` to explain the outcome of the prediction
 
 <details> 
     <summary>screenshots</summary>
@@ -155,4 +155,27 @@ The regression model uses Random Forest Regressor, trained by the [Boston House 
     <img src="images/08-2.png">
     <img src="images/08-3.png">
     <img src="images/08-4.png">
+</details>
+
+## :nine: Molecular Solubility Prediction App
+
+Predict the solubility value (LogS) of input molecules. The input molecules must be in the [SMILES](https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system) notation. With the help of the RDKit library, this app will compute four descriptors for each molecule:
+
+* MolLogP
+* Molecular Weight
+* Number Of Rotatable Bonds
+* Aromatic Proportion
+
+These four variables are crucial to the Linear Regression model as suggested by John S. Delaney in [ESOL:  Estimating Aqueous Solubility Directly from Molecular Structure](https://pubs.acs.org/doi/10.1021/ci034243x). A [cleaned dataset](https://github.com/dataprofessor/data/blob/master/delaney_solubility_with_descriptors.csv) for training the model is provided by Data Professor.
+
+The installation of the RDKit library using pip can be impossible for now, hence it is suggested to [Install RDKit with Conda](https://www.rdkit.org/docs/Install.html). This includes creating a conda environment for the installation.
+
+* Built a regressor using the LinearRegression model from `sklearn`
+* Using `rdkit` for computing the required variables for the prediction
+
+
+<details> 
+    <summary>screenshots</summary>
+    <img src="images/09-1.png">
+    <img src="images/09-2.png">
 </details>
