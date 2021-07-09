@@ -22,7 +22,7 @@ streamlit run myapp.py
 A list of web apps in this repo:  
 
 📈 [Simple Stock Price App](#one-simple-stock-price-app)  
-🧬 [Simple Bioinformatics DNA Count](#two-simple-bioinformatics-dna-count)  
+🧬 [Simple Bioinformatics DNA Count App](#two-simple-bioinformatics-dna-count-app)   
 🤾 [Sports Exploratory Data Analysis App](#three-sports-exploratory-data-analysis-app)  
 🏭 [S&P 500 Stock Price App](#four-sp-500-stock-price-app)  
 💹 [Cryptocurrency Price App](#five-cryptocurrency-price-app)  
@@ -45,7 +45,7 @@ Towards Data Science article on [How to Get Stock Data Using Python](https://tow
     <img src="images/01-2.png">
 </details>
 
-## :two: Simple Bioinformatics DNA Count
+## :two: Simple Bioinformatics DNA Count App
 
 A DNA nucleotide count web app that counts the nucleotide composition (A, T, G, C) of a query DNA
 
@@ -83,11 +83,12 @@ A web app that scraps all latest data from the [list of S&P 500 companies](https
 * Web scraping with `pandas`
 * Fetching stock price with `yfinance`
 * Filtering data with conditions in `pandas` (data wrangling)
-* Slider in `streamlit`
+* Ploting with `altair`
 
 <details> 
-    <summary>screenshot</summary>
+    <summary>screenshots</summary>
     <img src="images/04-1.png">
+    <img src="images/04-2.png">
 </details>
 
 ## :five: Cryptocurrency Price App

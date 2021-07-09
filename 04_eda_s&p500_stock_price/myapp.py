@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import base64
-import matplotlib.pyplot as plt
-import seaborn as sns
 import numpy as np
 import yfinance as yf
 import altair as alt
@@ -14,7 +12,7 @@ def main():
 
     st.markdown("""
     This app retrieves the list of the **S&P 500** (from Wikipedia) and its corresponding **stock closing price** (year-to-date)!
-    * **Python libraries:** base64, pandas, streamlit, numpy, matplotlib, seaborn
+    * **Python libraries:** streamlit, base64, pandas, numpy, yfinance, altair
     * **Data source:** [Wikipedia](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies).
     """)
 
@@ -26,7 +24,7 @@ def main():
     # Sidebar - Sector selection
     sorted_sector_unique = sorted( df['GICS Sector'].unique() )
     with st.sidebar.form(key='data_form'):
-        st.write('Select sector/sectors of interest.')
+        st.write('Select S&P 500 sector/sectors of interest.')
         selected_sector = st.multiselect('Sector/Sectors', sorted_sector_unique, sorted_sector_unique)
         submit = st.form_submit_button(label='Submit')
 
@@ -47,7 +45,10 @@ def main():
             selected_company = st.multiselect('Company/Companies', list(df_selected_sector.Symbol), None)
             plot = st.form_submit_button(label='Plot')
 
-        if plot and len(selected_company) > 0:
+        if plot and len(selected_company) > 10:
+            st.error('You have selected too many companies!')
+
+        elif plot and len(selected_company) > 0:
             
             data = yf.download(
                 tickers = selected_company,
@@ -91,13 +92,13 @@ def main():
                         color="Company:N"
                     )
                 )
-                st.altair_chart(chart)
+                st.altair_chart(chart, use_container_width=True)
             except:
-                st.warning('You have selected too many companies! Please select lesser.')
+                st.error('You have selected too many companies! Please select lesser.')
             
     else:
-        st.warning('Please select at least **one** sector to proceed.')
-        if st.button('Secret cheer up button'):
+        st.error('Please select at least **one** sector to proceed.')
+        if st.button('Secret cheer up button 🎈'):
             st.balloons()
     
 # Web scraping of S&P 500 data
