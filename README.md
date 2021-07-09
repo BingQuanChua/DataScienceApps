@@ -18,6 +18,19 @@ To run a web app
 streamlit run myapp.py
 ```
 
+## Web Apps
+A list of web apps in this repo:  
+
+📈 [Simple Stock Price App](#one-simple-stock-price-app)  
+🧬 [Simple Bioinformatics DNA Count](#two-simple-bioinformatics-dna-count)  
+🤾 [Sports Exploratory Data Analysis App](#three-sports-exploratory-data-analysis-app)  
+🏭 [S&P 500 Stock Price App](#four-sp-500-stock-price-app)  
+💹 [Cryptocurrency Price App](#five-cryptocurrency-price-app)  
+🌷 [Simple Iris Flower Prediction App](#six-simple-iris-flower-prediction-app)  
+🐧 [Simple Palmer Penguin Prediction App](#seven-simple-palmer-penguin-prediction-app)  
+🏡 [Boston Housing Price Prediction App](#eight-boston-housing-price-prediction-app)  
+🧪 [Molecular Solubility Prediction App](#nine-molecular-solubility-prediction-app)  
+
 ## :one: Simple Stock Price App
 
 A simple web app that shows the stock price of multiple multinational companies. Retrieve stock data directly from Yahoo Finance.
@@ -57,7 +70,6 @@ Web scraping from [Basketball Reference](https://www.basketball-reference.com) a
 
 <details> 
     <summary>screenshots</summary>
-    <img src="images/03-1.png">
     <img src="images/03-2.png">
     <img src="images/03-3.png">
 </details>
@@ -119,11 +131,10 @@ The original [Palmer Penguins Dataset](https://allisonhorst.github.io/palmerpeng
 <details> 
     <summary>screenshots</summary>
     <img src="images/07-1.png">
-    <img src="images/07-2.png">
     CSV file upload
-    <img src="images/07-3.png">
+    <img src="images/07-2.png">
     Slider input
-    <img src="images/07-4.png">
+    <img src="images/07-3.png">
 </details>
 
 ## :eight: Boston Housing Price Prediction App

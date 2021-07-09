@@ -5,7 +5,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import yfinance as yf
-import altair as alt
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
+import time
+today_date = datetime.now().strftime('%Y-%m-%d')
+ten_years_ago_date = (datetime.now() - relativedelta(years=10)).strftime('%Y-%m-%d')
 
 def main():
     st.set_page_config(layout="wide")
@@ -61,44 +65,13 @@ def main():
             )
 
             st.header('Stock Closing Price')
-
-            df = data.T.reset_index()
-            if len(selected_company) == 1:
-                
-                df_filtered = df[df.get('index')=='Close'].copy()
-                df_filtered.at[3, 'index']=selected_company[0]
-
-                df_melt = pd.melt(df_filtered, id_vars=["index"]).rename(
-                    columns={"index":"Company", "value": "Closing Value"}
-                )
-
-            else:
-                
-                df_filtered = df[df['level_1']=='Close'].copy()
-                df_filtered.drop(columns='level_1', inplace=True)
-
-                df_melt = pd.melt(df_filtered, id_vars=["level_0"]).rename(
-                    columns={"level_0":"Company", "value": "Closing Value"}
-                )
-            
-            try:
-                chart = (
-                    alt.Chart(df_melt)
-                    .mark_area(opacity=0.4)
-                    .encode(
-                        x="Date:T",
-                        y=alt.Y("Closing Value"),
-                        color="Company:N"
-                    )
-                )
-                st.altair_chart(chart)
-            except:
-                st.warning('You have selected too many companies! Please select lesser.')
-            
+            for symbol in selected_company:
+                plot=price_plot(data, symbol)
     else:
         st.warning('Please select at least **one** sector to proceed.')
         if st.button('Secret cheer up button'):
             st.balloons()
+            st.info('Please select at least **one** sector to proceed.')
     
 # Web scraping of S&P 500 data
 @st.cache
@@ -115,6 +88,30 @@ def filedownload(df):
     b64 = base64.b64encode(csv.encode()).decode()  # strings <-> bytes conversions
     href = f'<a href="data:file/csv;base64,{b64}" download="SP500.csv">Download CSV File</a>'
     return href
+
+# Plot Closing Price of Query Symbol
+def price_plot(data, symbol):
+    try:
+        # multiindex data
+        df = pd.DataFrame(data[symbol].Close)
+    except:
+        # in case only one symbol in the data
+        df = pd.DataFrame(data.Close)
+
+    df['Date'] = df.index
+
+    fig, ax = plt.subplots(figsize=(10, 5))
+    plt.fill_between(df.Date, df.Close, color='skyblue', alpha=0.3)
+    plt.plot(df.Date, df.Close, color='skyblue', alpha=0.8)
+    
+    plt.xticks(rotation=90)
+    plt.title(symbol, fontweight='bold')
+    plt.xlabel('Date', fontweight='bold')
+    plt.ylabel('Closing Price', fontweight='bold')
+
+    st.set_option('deprecation.showPyplotGlobalUse', False)
+    
+    return st.pyplot()
 
 if __name__ == "__main__":
     main()
