@@ -13,7 +13,7 @@ def main():
 
     Shows the stock **closing price** and **volume** of the selected company for the past 10 years!  
     Today's Date:   `{today_date}`  
-    Ten Year's Ago: `{ten_years_ago_date}`  
+    Ten Years Ago: `{ten_years_ago_date}`  
     """)
 
     ticker_symbols = {
