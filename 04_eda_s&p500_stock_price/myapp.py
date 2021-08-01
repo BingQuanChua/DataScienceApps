@@ -42,7 +42,7 @@ def main():
         # Plot closing price
         with st.sidebar.form(key='plot_form'):
             st.write('Select company/companies to plot the closing price.')
-            selected_company = st.multiselect('Company/Companies', list(df_selected_sector.Symbol), None)
+            selected_company = st.multiselect('Company/Companies', sorted(list(df_selected_sector.Symbol)), None)
             plot = st.form_submit_button(label='Plot')
 
         if plot and len(selected_company) > 10:
