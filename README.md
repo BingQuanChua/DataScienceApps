@@ -140,6 +140,8 @@ The original [Palmer Penguins Dataset](https://allisonhorst.github.io/palmerpeng
 
 ## :eight: Boston Housing Price Prediction App
 
+💻 Web app deployed on Heroku: https://boston-house-predict.herokuapp.com/
+
 Predicts the median value of Boston House Price from the given input parameters which consists of:
 
 * **crim**: per capita crime rate by town.
